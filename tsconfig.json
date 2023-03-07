@@ -1,0 +1,29 @@
+{
+  "include": [
+    "src/**/*"
+  ],
+
+  "compilerOptions": {
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "target": "ES2017",
+
+    "jsx": "react-jsx",
+    "jsxImportSource": "preact",
+
+    "lib": ["ES5", "DOM"],
+
+    "allowJs": false,
+    "strict": true,
+    "allowUnreachableCode": false,
+    "allowUnusedLabels": true,
+    "exactOptionalPropertyTypes": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitOverride": true,
+    "noImplicitReturns": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false
+  }
+}
