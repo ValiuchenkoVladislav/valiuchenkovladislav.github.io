@@ -17,7 +17,8 @@
     "baseUrl": "src",
     "paths": {
       "@utils/*": ["./utils/*"],
-      "@assets/*": ["./assets/*"]
+      "@assets/*": ["./assets/*"],
+      "@pages/*": ["./pages/*"]
     },
 
     "allowJs": false,

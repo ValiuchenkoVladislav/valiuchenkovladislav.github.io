@@ -10,7 +10,8 @@
     "build": "webpack --mode production"
   },
   "dependencies": {
-    "preact": "^10.13.0"
+    "preact": "^10.13.0",
+    "preact-router": "^4.1.0"
   },
   "devDependencies": {
     "@types/react": "^18.0.28",
