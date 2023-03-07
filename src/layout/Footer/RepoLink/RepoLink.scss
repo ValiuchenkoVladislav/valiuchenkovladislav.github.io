@@ -1,0 +1,9 @@
+#project-repo img {
+  width: max(40px, 2.3vw);
+  aspect-ratio: 1;
+
+  transition: .8s;
+  &:hover {
+    scale: 1.2;
+  }
+}
