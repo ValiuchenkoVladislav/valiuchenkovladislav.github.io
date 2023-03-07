@@ -1,0 +1,8 @@
+@use "@assets/stylesheets/font_sizes.scss" as fs;
+
+
+nav {
+  display: flex;
+  gap: max(16px, .8vw);
+  font-size: fs.$medium;
+}

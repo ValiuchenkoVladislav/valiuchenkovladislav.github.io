@@ -1,0 +1,7 @@
+.nav-link {
+  transition: .8s;
+
+  &[aria-current="page"] {
+    scale: 1.1;
+  }
+}
