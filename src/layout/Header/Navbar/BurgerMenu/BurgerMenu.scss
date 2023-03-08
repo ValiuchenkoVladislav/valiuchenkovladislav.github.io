@@ -1,38 +1,7 @@
 @use "@assets/stylesheets/font_sizes.scss" as fs;
 
 
-#burger-button {
-  background: none;
-  border: none;
-  cursor: pointer;
-  display: flex;
-  flex-direction: column;
-  gap: max(7px, .4vw);
-  z-index: 2;
-
-  .burger-bar {
-    width: max(40px, 2.3vw);
-    height: max(4px, .23vw);
-    background-color: black;
-    transition: .5s;
-  }
-
-  &[aria-expanded="true"] .burger-bar {
-    &:first-child {
-      transform: translateY(10.5px) rotate(45deg);
-    }
-
-    &:nth-child(2) {
-      scale: 0;
-    }
-
-    &:last-child {
-      transform: translateY(-11.5px) rotate(-45deg);
-    }
-  }
-}
-
-#navigation-menu {
+#burger-menu {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -54,4 +23,3 @@
     }
   }
 }
-

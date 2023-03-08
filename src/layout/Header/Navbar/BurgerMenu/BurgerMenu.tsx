@@ -1,29 +1,27 @@
 import { useState } from "preact/hooks";
 
-import { NavLinks } from "../NavLinks/NavLinks";
+import { BurgerButton } from "./BurgerButton/BurgerButton";
+
+import { NavLink, type NavLinkProps } from "../NavLink/NavLink";
 
 import "./BurgerMenu.scss";
 
 
-export function BurgerMenu(): JSX.Element {
+type BurgerMenuProps = Readonly<{
+  links: NavLinkProps[];
+}>;
+
+export function BurgerMenu({ links }: BurgerMenuProps): JSX.Element {
   const [isExpanded, setIsExpanded] = useState<boolean>(false);
 
   return (
     <>
-      <button
-        onClick={() => setIsExpanded(!isExpanded)}
-        id="burger-button"
-        aria-expanded={isExpanded}
-        aria-label="Burger menu button"
-      >
-        <div className="burger-bar"/>
-        <div className="burger-bar"/>
-        <div className="burger-bar"/>
-      </button>
+      <BurgerButton {...{setIsExpanded, isExpanded}}/>
 
       {isExpanded &&
-        <menu id="navigation-menu">
-          <NavLinks/>
+        <menu id="burger-menu">
+          {links.map(linkProps =>
+            <NavLink {...linkProps} onClick={() => setIsExpanded(false)}/>)}
         </menu>
       }
     </>
