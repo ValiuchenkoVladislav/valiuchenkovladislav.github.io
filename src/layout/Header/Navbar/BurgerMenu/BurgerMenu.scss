@@ -14,11 +14,11 @@
   background-color: rgb(255, 137, 137);
 
   a {
-    font-size: fs.$small;
+    font-size: fs.$extra-large;
     font-weight: 900;
     transition: .8s;
 
-    &:is(:hover, .active) {
+    &:hover, &.active {
       scale: 1.1;
     }
   }
