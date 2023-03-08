@@ -7,7 +7,7 @@ export function Signature(): JSX.Element {
   const [screenWidth, setScreenWidth] = useState<number>(window.innerWidth);
 
   useEffect(() => { // in case if user resizes screen dynamically
-    window.onresize = () => setScreenWidth(window.innerWidth);
+    window.addEventListener("resize", () => setScreenWidth(window.innerWidth));
   }, []);
 
   return (

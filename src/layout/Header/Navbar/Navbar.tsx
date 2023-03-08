@@ -1,15 +1,21 @@
-import { NavLink } from "./NavLink/NavLink";
+import { useState, useEffect } from "preact/hooks";
 
-import { HOME_PATH } from "@pages/Home/Home";
+import { NavLinks } from "./NavLinks/NavLinks";
+import { BurgerMenu } from "./BurgerMenu/BurgerMenu";
 
 import "./Navbar.scss";
 
 
 export function Navbar(): JSX.Element {
+  const [screenWidth, setScreenWidth] = useState<number>(window.innerWidth);
+
+  useEffect(() => { // in case if user resizes screen dynamically
+    window.addEventListener("resize", () => setScreenWidth(window.innerWidth));
+  }, []);
+
   return (
     <nav>
-      <NavLink href={HOME_PATH}>Home</NavLink>
-      <NavLink href="/test-page">Test</NavLink>
+      {screenWidth > 780 ? <NavLinks/> : <BurgerMenu/>}
     </nav>
   );
 }

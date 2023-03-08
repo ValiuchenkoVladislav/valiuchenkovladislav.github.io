@@ -3,4 +3,5 @@
 
 #signature {
   font-size: fs.$large;
+  z-index: 2; // make this element be visibile over nav menu
 }
