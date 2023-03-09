@@ -6,7 +6,7 @@
 
 
 #app {
-  height: 100vh;
+  height: 100%;
   width: 92vw;
   padding: 0 4vw;
   font-family: Inter;
@@ -24,6 +24,10 @@
 * {
   margin: 0;
   padding: 0;
+}
+
+html, body {
+  height: 100%;
 }
 
 a {

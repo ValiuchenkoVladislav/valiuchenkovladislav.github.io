@@ -20,7 +20,7 @@
     }
 
     &:nth-child(2) {
-      scale: 0;
+      transform: scale(0);
     }
 
     &:last-child {
