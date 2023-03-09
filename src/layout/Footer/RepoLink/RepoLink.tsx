@@ -6,7 +6,7 @@ import "./RepoLink.scss";
 export function RepoLink(): JSX.Element {
   return (
     <a
-      href="https://github.com/ValiuchenkoVladislav/portfolio-website"
+      href="https://github.com/ValiuchenkoVladislav/valiuchenkovladislav.github.io"
       target="_blank"
       rel="noreferrer"
       id="project-repo"
