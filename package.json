@@ -3,9 +3,9 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc && vite build",
-    "preview": "vite preview"
+    "dev": "vite --host",
+    "build": "rm -rf dist && tsc && vite build",
+    "preview": "vite preview --host"
   },
   "dependencies": {
     "preact": "^10.19.3"
