@@ -1,0 +1,11 @@
+# Logs
+*.log*
+
+# Dependencies
+node_modules/
+
+# Project bundle
+dist/
+
+# Editor config
+.vscode/
