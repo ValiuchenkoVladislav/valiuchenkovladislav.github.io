@@ -31,6 +31,9 @@ devDependencies:
   vite:
     specifier: ^5.0.8
     version: 5.0.10
+  vite-plugin-singlefile:
+    specifier: ^0.13.5
+    version: 0.13.5(rollup@4.9.1)(vite@5.0.10)
 
 packages:
 
@@ -1921,6 +1924,18 @@ packages:
 
   /util-deprecate@1.0.2:
     resolution: {integrity: sha512-EPD5q1uXyFxJpCrLnCc1nHnq3gOa6DZBocAIiI2TaSCA7VCJ1UJDMagCzIkXNsUYfD1daK//LTEQ8xiIbrHtcw==}
+    dev: true
+
+  /vite-plugin-singlefile@0.13.5(rollup@4.9.1)(vite@5.0.10):
+    resolution: {integrity: sha512-y/aRGh8qHmw2f1IhaI/C6PJAaov47ESYDvUv1am1YHMhpY+19B5k5Odp8P+tgs+zhfvak6QB1ykrALQErEAo7g==}
+    engines: {node: ^14.18.0 || >=16.0.0}
+    peerDependencies:
+      rollup: '>=2.79.0'
+      vite: '>=3.2.0'
+    dependencies:
+      micromatch: 4.0.5
+      rollup: 4.9.1
+      vite: 5.0.10
     dev: true
 
   /vite@5.0.10:

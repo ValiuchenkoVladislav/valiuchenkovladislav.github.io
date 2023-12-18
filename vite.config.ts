@@ -1,11 +1,13 @@
 import { defineConfig } from "vite";
 
 import preactPreset from "@preact/preset-vite";
+import { viteSingleFile } from "vite-plugin-singlefile";
 
 
 export default defineConfig({
   plugins: [
     preactPreset(), // preact integration
+    viteSingleFile() // bundle optimization
   ],
 
   root: "./src",
