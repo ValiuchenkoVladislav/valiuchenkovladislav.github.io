@@ -1,4 +1,5 @@
 import { StaticUIBar } from "~/components/StaticUIBar";
+import { ScopeCorner } from "~/components/ScopeCorner";
 
 
 export function Footer() {
@@ -16,6 +17,8 @@ export function Footer() {
           @VALIUCHENKOVLADISLAV
         </span>
       </a>
+
+      <ScopeCorner position="bottom-right"/>
     </StaticUIBar>
   );
 }
