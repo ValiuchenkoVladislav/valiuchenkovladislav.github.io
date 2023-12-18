@@ -1,12 +1,14 @@
 import { defineConfig } from "vite";
 
 import preactPreset from "@preact/preset-vite";
+import svgrPlugin from "vite-plugin-svgr";
 import { viteSingleFile } from "vite-plugin-singlefile";
 
 
 export default defineConfig({
   plugins: [
     preactPreset(), // preact integration
+    svgrPlugin(), // svg support
     viteSingleFile() // bundle optimization
   ],
 
